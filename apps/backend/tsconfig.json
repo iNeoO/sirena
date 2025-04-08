@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "strict": true,
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "types": ["node"],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@types/*": ["src/types/*"],
+      "@schemas/*": ["src/schemas/*"],
+      "@libs/*": ["src/libs/*"],
+      "@middlewares/*": ["src/middlewares/*"],
+      "@features/*": ["src/features/*"]
+    }
+  }
+}
