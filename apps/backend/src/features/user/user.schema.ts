@@ -1,5 +1,5 @@
-import z from "zod";
-import "zod-openapi/extend";
+import z from 'zod';
+import 'zod-openapi/extend';
 
 export const responseSchema = z.object({
   id: z.string(),

@@ -6,11 +6,10 @@
 pnpm install
 ```
 
-### 2. Generate OpenAPI types
+### 2. Build backend to create client
 
 ```bash
-pnpm --filter @sirena/backend generate:openAPI
-pnpm --filter @sirena/frontend generate:openAPI
+pnpm --filter @sirena/backend build
 ```
 
 ### 3. Start development servers
