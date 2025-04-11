@@ -6,7 +6,7 @@
 pnpm install
 ```
 
-### 2. Build backend to create client
+### 2. Build backend to create client rpc
 
 ```bash
 pnpm --filter @sirena/backend build

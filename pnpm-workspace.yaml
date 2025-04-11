@@ -1,6 +1,11 @@
 packages:
-  - "packages/*"
-  - "apps/*"
+  - packages/*
+  - apps/*
 catalogs:
   prisma:
     prisma: latest
+onlyBuiltDependencies:
+  - '@biomejs/biome'
+  - '@prisma/engines'
+  - esbuild
+  - prisma
