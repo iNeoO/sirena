@@ -18,3 +18,12 @@ pnpm --filter @sirena/backend build
 pnpm --filter @sirena/backend dev
 pnpm --filter @sirena/frontend dev
 ```
+
+### 1. Migrations
+
+```bash
+docker compose up
+# alter packages/database/prisma/schema.prisma
+docker exec -ti sirena-database-dev sh
+pnpm --filter @sirena/database db:migrate --name <the migration name>
+```

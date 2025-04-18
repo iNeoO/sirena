@@ -16,7 +16,7 @@ generator zod {
 
 datasource db {
   provider = "postgresql"
-  url      = env("DATABASE_URL")
+  url      = env("PG_URL")
 }
 
 model User {
@@ -27,4 +27,5 @@ model User {
   password          String
   isEmailValid      Boolean
   createdAt         DateTime              @default(now())
+  isActive          Boolean              @default(true)
 }
